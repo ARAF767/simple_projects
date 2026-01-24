@@ -35,7 +35,6 @@ int main(){
     cout << "Enter the number of courses : ";
     cin >> numcourses;
 
-    for (int i = 0; i < numcourses; i++)
     {
         Course course;
 
