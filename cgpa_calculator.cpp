@@ -35,7 +35,7 @@ int main(){
     cout << "Enter the number of courses : ";
     cin >> numcourses;
 
-    {
+    for (int i = 0; i < numcourses; i++){
         Course course;
 
         cout << "\n Enter the details for the course " << i +1 << ": "<< endl;
@@ -62,6 +62,15 @@ int main(){
 
     cout << fixed << setprecision(2);
     cout << "\n You cgpa is : " << cgpa << endl;
+    for (const auto& course : courses){
+      for (int j = 0; j<15 ; j++){
+        cout << "=";
+      }
+      cout << "\nCourse Name    :" <<course.name << endl;
+      cout << "Credit hours   :" << course.creditHours << endl;
+      cout << "Grade          :" << course.grade << endl;
+        
+    }
 
     return 0 ;
 }
